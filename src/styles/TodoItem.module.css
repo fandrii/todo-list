@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+}
+.actionBtn {
+  background: transparent;
+  border: none;
+  color: #1976d2;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+.editRow {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+.editInput {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}

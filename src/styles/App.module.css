@@ -1,0 +1,21 @@
+.container {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: Inter, sans-serif;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.stats span {
+  margin-right: 12px;
+  color: #444;
+}
+.clearBtn {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.clearBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
