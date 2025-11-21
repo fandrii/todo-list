@@ -22,15 +22,15 @@ function App() {
   };
 
   const updateTodo = (id: string, updates: Partial<Todo>) => {
-    setTodos(todos.map((t) => (t.id === id ? { ...t, ...updates } : t)));
+    setTodos(todos.map((task) => (task.id === id ? { ...task, ...updates } : task)));
   };
 
   const deleteTodo = (id: string) => {
-    setTodos(todos.filter((t) => t.id !== id));
+    setTodos(todos.filter((task) => task.id !== id));
   };
 
   const clearCompleted = () => {
-    setTodos(todos.filter((t) => !t.completed));
+    setTodos(todos.filter((task) => !task.completed));
   };
 
   return (
@@ -45,8 +45,10 @@ function App() {
         <TodoList
           todos={todos}
           onToggle={(id) => {
-            const t = todos.find((x) => x.id === id);
-            if (t) updateTodo(id, { completed: !t.completed });
+            const task = todos.find((x) => x.id === id);
+            // console.log("toggle", task);
+
+            if (task) updateTodo(id, { completed: !task.completed });
           }}
           onEdit={(id, text) => updateTodo(id, { text })}
           onDelete={deleteTodo}

@@ -9,8 +9,8 @@ interface Props {
 
 const Filter: React.FC<Props> = ({ todos, onClearCompleted }) => {
   const total = todos.length;
-  const active = todos.filter((t) => !t.completed).length;
-  const completed = todos.filter((t) => t.completed).length;
+  const active = todos.filter((task) => !task.completed).length;
+  const completed = todos.filter((task) => task.completed).length;
 
   return (
     <div className={styles.wrapper}>

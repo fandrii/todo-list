@@ -10,6 +10,8 @@ interface Props {
 }
 
 const TodoItem: React.FC<Props> = ({ todo, onToggle, onEdit, onDelete }) => {
+  // console.log("ittem:", todo);
+
   const [editing, setEditing] = useState(false);
   const [value, setValue] = useState(todo.text);
 
